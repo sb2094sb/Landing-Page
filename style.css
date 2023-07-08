@@ -106,19 +106,30 @@ text-decoration: none;
 .body .testimonial{
     display: flex;
     /*understand how to wrap at lengths you want while still maintaining container size*/
+    background-color: #E5E7EB;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial .container{
+    display: flex;
     flex-flow: column wrap;
     background-color: #E5E7EB;
-    padding: 100px 500px;
+    flex: 0 1 80%;
+    gap: 10px;
 }
+
 .body .quote{
     font-size: 36px;
     font-weight: light;
     font-style: italic;
     color: #1F2937;
+    
     align-self: center;
 }
 .body .author{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     color: #1F2937;
     align-self: flex-end;
