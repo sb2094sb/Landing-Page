@@ -66,6 +66,10 @@ ul {
 text-decoration: none;
 }
 
+.body{
+    width: 100%;
+}
+
 .body .info-header{
     text-align: center;
     font-size: 36px;
@@ -78,6 +82,8 @@ text-decoration: none;
     display: flex;
     gap: 75px;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .body .card{
@@ -100,7 +106,7 @@ text-decoration: none;
 }
 
 .body .info{
-    margin-bottom: 40px;;
+    margin-bottom: 40px;
 }
 
 .body .testimonial{
