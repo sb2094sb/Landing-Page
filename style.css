@@ -15,35 +15,55 @@ ul {
     padding:0;
     gap: 10px;
     list-style: none;
+
 }
 
 .header{
-    background-color: #1F2937;
     display: flex;
-    flex-direction: column;
-    gap: 75px;
-    padding: 30px 150px;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
 }
+
+.heading{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 80%;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
 .header .nav{
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 .header .main{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    flex:auto;
+    flex-wrap: wrap;
 }
 .header .main .left{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width:400px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
     gap: 10px;
+    text-align: center;
+    padding: 0 40px;
 }
 
 .header .logo{
     font-size: 24px;
     color: #F9FAF8;
     font-weight: bold;
+    flex-shrink: 0;
 }
 
 .header img{
@@ -66,9 +86,6 @@ ul {
 text-decoration: none;
 }
 
-.body{
-    width: 100%;
-}
 
 .body .info-header{
     text-align: center;
