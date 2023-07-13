@@ -41,9 +41,11 @@ ul {
 .header .main .left{
     display: flex;
     justify-content: flex-start;
-    flex-basis: 45%;
+    flex-basis: 40%;
     flex-grow:1;
     /* padding: 10px 0; */
+     /* How can I make it so when my flex items wrap (the text), there are no whitespaces around the text.
+       I still want my text-aligned to center, while the group of text is pushed all the way to the left  */
 }
 
 .header .main .flex-column{
@@ -56,8 +58,10 @@ ul {
 .header .main .right{
         /* flex-basis: 20%;
     flex-grow: 0; */
+    display: flex;
+    flex-basis: 55%;
 
-    
+    justify-content: flex-end;
 }
 .header .logo{
     font-size: 24px;
@@ -67,7 +71,10 @@ ul {
 }
 
 .header img{
-    width: 500px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 500px;
+    flex-basis: 500px;
     height: 200px;
 }
 
