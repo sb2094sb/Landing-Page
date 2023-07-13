@@ -110,3 +110,53 @@ button{
     font-weight: 900;
     color:#1F2937;
 }
+
+.body-info .media-object{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.body-info img{
+    width: 150px;
+    height: 150px;
+    border-color: #3882F6;
+    border-radius: 6px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.body-info .card{
+    flex-basis: 150px;
+    text-align: center;
+    font-size: 16px;
+    color: #1F2937;
+}
+
+.body-testimonial{
+    background-color: #E5E7EB;
+    /* padding: 100px 0; */
+}
+
+.body-testimonial .flex-container{
+    display: flex;
+    flex-flow: column;
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+.body-testimonial .quote{
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+    align-self: center;
+}
+.body-testimonial .author{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1F2937;
+    align-self: flex-end;
+}
