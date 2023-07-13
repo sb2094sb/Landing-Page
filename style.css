@@ -100,8 +100,7 @@ button{
     border-radius: 4px;
     padding: 5px 10px;
     font-size: 16px;
-    max-width: 20%;
-    align-self: center;
+    /* max-width: 20%; */
 }
 
 .body-info .info-header{
@@ -159,4 +158,41 @@ button{
     font-weight: bold;
     color: #1F2937;
     align-self: flex-end;
+}
+
+/* .body-enlist{
+    padding-top: 60px;
+    padding-bottom: 20px;
+} */
+
+.body-enlist .container{
+    background-color: #3882F6;
+    padding: 50px 100px;
+    /* why does padding break out of enlist container when I change it to a percentage? */
+    border-radius: 6px;
+}
+
+.body-enlist .call-to-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    /* maybe apply same structure from heading wrap to this flex container, so when the sign up button
+    wraps, everything is center aligned */
+}
+
+.call-to-action .text{
+    /* flex: 1 1 auto; */
+    font-size: 18px;
+    color: white;
+}
+.call-to-action .title{
+ font-weight: bold;
+
+}
+.call-to-action button{
+    border: 2px solid white;
+    /* flex-shrink: 0; */
+    flex-basis: 100px;
+    min-width: 100px;
 }
