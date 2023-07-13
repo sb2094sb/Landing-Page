@@ -8,57 +8,57 @@ body {
     gap: 40px;
     box-sizing: border-box;
 }
-
+body > div{
+    padding: 0 10%;
+}
 ul {
     display: flex;
     margin:0;
     padding:0;
     gap: 10px;
     list-style: none;
-
+    flex-shrink: 0;
 }
 
 .header{
-    display: flex;
-    background-color: #1F2937;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-}
-
-.heading{
-    display: flex;
-    flex-flow: column wrap;
-    flex: 0 1 80%;
-    gap: 60px;
-    margin-bottom: 40px;
+    background-color: #1F2937;   
 }
 
 .header .nav{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    margin: 10px 0;
+    gap: 20px;
 }
+
 .header .main{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:15px;
-    flex:auto;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px 0;
+    flex-wrap: wrap-reverse;
+    gap:10px;
 }
 .header .main .left{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
-    gap: 10px;
-    text-align: center;
-    padding: 0 40px;
+    justify-content: flex-start;
+    flex-basis: 45%;
+    flex-grow:1;
+    /* padding: 10px 0; */
 }
 
+.header .main .flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.header .main .right{
+        /* flex-basis: 20%;
+    flex-grow: 0; */
+
+    
+}
 .header .logo{
     font-size: 24px;
     color: #F9FAF8;
@@ -67,7 +67,7 @@ ul {
 }
 
 .header img{
-    width: 400px;
+    width: 500px;
     height: 200px;
 }
 
@@ -86,149 +86,13 @@ ul {
 text-decoration: none;
 }
 
-
-.body .info-header{
-    text-align: center;
-    font-size: 36px;
-    font-weight: 900;
-    color:#1F2937;
-    margin-bottom: 40px;
-}
-
-.body .media-object{
-    display: flex;
-    gap: 75px;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.body .card{
-    max-width: 150px;
-    display: flex;
-    flex-flow: column wrap;
-    text-align: center;
-    gap: 5px;
-    font-size: 16px;
-    color: #1F2937;
-}
-
-.body img{
-    width: 150px;
-    height: 150px;
-    border-color: #3882F6;
-    border-radius: 6px;
-    border-width: 3px;
-    border-style: solid;
-}
-
-.body .info{
-    margin-bottom: 40px;
-}
-
-.body .testimonial{
-    display: flex;
-    /*understand how to wrap at lengths you want while still maintaining container size*/
-    background-color: #E5E7EB;
-    padding: 100px 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonial .container{
-    display: flex;
-    flex-flow: column wrap;
-    background-color: #E5E7EB;
-    flex: 0 1 80%;
-    gap: 10px;
-}
-
-.body .quote{
-    font-size: 36px;
-    font-weight: light;
-    font-style: italic;
-    color: #1F2937;
-    
-    align-self: center;
-}
-.body .author{
-    font-size: 18px;
-    font-weight: bold;
-    color: #1F2937;
-    align-self: flex-end;
-}
-
-.body .enlist{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
-}
-
-.enlist .container{
-    background-color: #3882F6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 66%;
-    padding: 50px 0;
-    border-radius: 6px;
-}
-
-.enlist .call-to-action{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex:0 1 75%;
-}
-
-.call-to-action .text{
-    flex: 1 1 auto;
-    font-size: 18px;
-    color: white;
-}
-.call-to-action .title{
- font-weight: bold;
-
-}
-.call-to-action button{
-    border: 2px solid white;
-    flex: 0 0 auto; 
-}
-
 button{
     background-color: #3882F6;
     color: white;
     border: none;
     border-radius: 4px;
-    width: 80px;
     padding: 5px 10px;
     font-size: 16px;
+    max-width: 20%;
+    align-self: center;
 }
-
-.footer{
-    background-color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer .copyright-text{
-    font-size: 14px; 
-    color: #E5E7EB;
-    padding: 25px;
-}
-
-/* Notes/TODO 
-
-- cant tell if im too tired to not know something so obvious... but is there a way to wrap two different
-sections in a flex container column, and have their width shorter than the actual page, but still have
-different background colors that extend to the full page width?
-
-- split body up into 3 separate flex containers - then can fix spacing between each container with gap
-    instead of manually fixing specific margins
-
-- revisit usage of flex containers, see if theres a more efficient way to group elements
-
-*/
