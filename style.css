@@ -2,7 +2,9 @@ body {
     font-family: Roboto, sans-serif;
     min-height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
+    /* removed wrap and now nav bar overflows when i shrink the window. Figure out how to fix this 
+    without hiding overflow in .nav*/
     padding:0;
     margin:0;
     gap: 40px;
@@ -10,6 +12,7 @@ body {
 }
 body > div{
     padding: 0 10%;
+    flex-shrink: 0; /* Prevent flex items from shrinking */
 }
 ul {
     display: flex;
@@ -29,12 +32,13 @@ ul {
     justify-content: space-between;
     margin: 10px 0;
     gap: 20px;
+    min-width: max-content;
 }
 
 .header .main{
     display: flex;
     justify-content: space-around;
-    margin: 80px 0;
+    margin: 5% 0;
     flex-wrap: wrap-reverse;
     gap:10px;
 }
@@ -43,7 +47,6 @@ ul {
     justify-content: flex-start;
     flex-basis: 40%;
     flex-grow:1;
-    /* padding: 10px 0; */
      /* How can I make it so when my flex items wrap (the text), there are no whitespaces around the text.
        I still want my text-aligned to center, while the group of text is pushed all the way to the left  */
 }
@@ -56,8 +59,6 @@ ul {
     gap: 5px;
 }
 .header .main .right{
-        /* flex-basis: 20%;
-    flex-grow: 0; */
     display: flex;
     flex-basis: 55%;
 
@@ -100,7 +101,6 @@ button{
     border-radius: 4px;
     padding: 5px 10px;
     font-size: 16px;
-    /* max-width: 20%; */
 }
 
 .body-info .info-header{
@@ -116,7 +116,7 @@ button{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 5% 0;
 }
 .body-info img{
     width: 150px;
@@ -136,7 +136,6 @@ button{
 
 .body-testimonial{
     background-color: #E5E7EB;
-    /* padding: 100px 0; */
 }
 
 .body-testimonial .flex-container{
@@ -160,14 +159,9 @@ button{
     align-self: flex-end;
 }
 
-/* .body-enlist{
-    padding-top: 60px;
-    padding-bottom: 20px;
-} */
-
 .body-enlist .container{
     background-color: #3882F6;
-    padding: 50px 100px;
+    padding: 5% 10%;
     /* why does padding break out of enlist container when I change it to a percentage? */
     border-radius: 6px;
 }
