@@ -2,7 +2,7 @@ body {
     font-family: Roboto, sans-serif;
     min-height: 100vh;
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     /* removed wrap and now nav bar overflows when i shrink the window. Figure out how to fix this 
     without hiding overflow in .nav*/
     padding:0;
@@ -12,7 +12,6 @@ body {
 }
 body > div{
     padding: 0 10%;
-    flex-shrink: 0; /* Prevent flex items from shrinking */
 }
 ul {
     display: flex;
