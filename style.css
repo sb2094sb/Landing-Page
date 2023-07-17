@@ -3,8 +3,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* removed wrap and now nav bar overflows when i shrink the window. Figure out how to fix this 
-    without hiding overflow in .nav*/
+    /* adding wrap would resolve the flex container overflow without having to set a minimum width
+    but introduced a new problem of unwanted vertical space added when wrapping occured */
     padding:0;
     margin:0;
     gap: 40px;
@@ -177,7 +177,6 @@ button{
 .body-enlist .container{
     background-color: #3882F6;
     padding: 5% 10%;
-    /* why does padding break out of enlist container when I change it to a percentage? */
     border-radius: 6px;
 }
 
@@ -186,7 +185,6 @@ button{
     justify-content: space-between;
     align-items: center;
     gap:10px;
-    /* min-width: max-content; uncomment if you don't want flex container to shrink when it runs out of space */
     flex-wrap: wrap;
     /* maybe apply same structure from heading wrap to this flex container, so when the sign up button
     wraps, everything is center aligned */
