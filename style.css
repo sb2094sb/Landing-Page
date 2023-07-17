@@ -15,7 +15,7 @@ body > div{
     
 }
 
-/* ------------Header Section-------------------- */
+/* ------------Header Nav Section-------------------- */
 .header{
     background-color: #1F2937;
     /* consider adding this to all direct div childs of body */
@@ -56,7 +56,7 @@ body > div{
     font-weight: bold;
 }
 
-/* ------------------------------------------- */
+/* ----------------Header Main Section----------------------- */
 
 .header .main{
     display: flex;
@@ -119,6 +119,8 @@ button{
     font-size: 16px;
 }
 
+
+/* ------------Body Info Section-------------------- */
 .body-info .info-header{
     text-align: center;
     font-size: 36px;
@@ -149,7 +151,7 @@ button{
     font-size: 16px;
     color: #1F2937;
 }
-
+/* ------------Body Testimonial Section-------------------- */
 .body-testimonial{
     background-color: #E5E7EB;
 }
@@ -174,7 +176,7 @@ button{
     color: #1F2937;
     align-self: flex-end;
 }
-
+/* ------------Body Enlist Section-------------------- */
 .body-enlist .container{
     background-color: #3882F6;
     padding: 5% 10%;
@@ -208,7 +210,7 @@ button{
     flex-basis: 100px;
     min-width: 100px;
 }
-
+/* ------------Footer Section-------------------- */
 .footer{
     background-color: #1F2937;
 }
