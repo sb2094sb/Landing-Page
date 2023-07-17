@@ -2,7 +2,7 @@ body {
     font-family: Roboto, sans-serif;
     min-height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     /* removed wrap and now nav bar overflows when i shrink the window. Figure out how to fix this 
     without hiding overflow in .nav*/
     padding:0;
@@ -12,18 +12,14 @@ body {
 }
 body > div{
     padding: 0 10%;
-}
-ul {
-    display: flex;
-    margin:0;
-    padding:0;
-    gap: 10px;
-    list-style: none;
-    flex-shrink: 0;
+    
 }
 
+/* ------------Header Section-------------------- */
 .header{
-    background-color: #1F2937;   
+    background-color: #1F2937;
+    /* consider adding this to all direct div childs of body */
+    min-width: min-content; 
 }
 
 .header .nav{
@@ -31,8 +27,36 @@ ul {
     justify-content: space-between;
     margin: 10px 0;
     gap: 20px;
+    
+}
+
+.header .header-links {
+    display: flex;
+    margin:0;
+    padding:0;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: nowrap;
     min-width: max-content;
 }
+
+
+.header .header-links li{
+   
+}
+.header-links a{
+    text-decoration: none;
+    font-size: 18px; 
+    color: #E5E7EB;
+}
+
+.header .logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+/* ------------------------------------------- */
 
 .header .main{
     display: flex;
@@ -63,12 +87,7 @@ ul {
 
     justify-content: flex-end;
 }
-.header .logo{
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: bold;
-    flex-shrink: 0;
-}
+
 
 .header img{
     flex-grow: 0;
@@ -84,14 +103,12 @@ ul {
     color: #F9FAF8;
 }
 
-.header .secondary-text, .header a {
+.header .secondary-text {
     font-size: 18px; 
     color: #E5E7EB;
 }
 
-.header a{
-text-decoration: none;
-}
+
 
 button{
     background-color: #3882F6;
