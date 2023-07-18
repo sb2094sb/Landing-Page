@@ -31,13 +31,14 @@ body > div{
     padding:0;
     gap: 10px;
     list-style: none;
+    justify-content: center;
 }
 
 .nav-bar a{
     text-decoration: none;
     font-size: 18px; 
     color: #E5E7EB;
-    overflow-wrap: break-word;
+    white-space: nowrap;
 }
 
 .header .logo{
