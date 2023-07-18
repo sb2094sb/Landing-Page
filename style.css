@@ -90,6 +90,7 @@ body > div{
     flex-grow: 0;
     flex-shrink: 0;
     min-width: 500px;
+    max-width: 500px;
     flex-basis: 500px;
     height: 200px;
 }
