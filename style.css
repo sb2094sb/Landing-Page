@@ -11,7 +11,8 @@ body {
     box-sizing: border-box;
     /* Added this so flex containers do not overflow (largest element that does not shrink is img (500px) */
    /* See if theres a more proper way of doing this - without a hardcoded value */
-    min-width: 500px;
+    /* min-width: 500px; */
+    min-width: min-content;
 }
 body > div{
     padding: 0 10%;
