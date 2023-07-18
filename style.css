@@ -22,9 +22,10 @@ body > div{
 /* ------------Header Nav Section-------------------- */
 .header{
     background-color: #1F2937;
+    min-width: 200px;
 }
 
-.header .header-links {
+.header .nav-bar {
     display: flex;
     margin:0;
     padding:0;
@@ -32,7 +33,7 @@ body > div{
     list-style: none;
 }
 
-.header-links a{
+.nav-bar a{
     text-decoration: none;
     font-size: 18px; 
     color: #E5E7EB;
